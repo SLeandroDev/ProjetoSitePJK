@@ -101,7 +101,7 @@ ul {
 p {
   font-size: 14px;
   line-height: 28px;
-  color: #4a4a4a;
+  color: #2E5E6F;
 }
 
 img {
@@ -846,7 +846,7 @@ Services Style
 }
 
 .services .service-item p {
-  color: #4a4a4a;
+  color: #2E5E6F;
   margin-bottom: 25px;
 }
 
@@ -934,7 +934,7 @@ h2.accordion-header button {
   padding: 0px 25px 30px 25px;
   font-size: 14px;
   line-height: 28px;
-  color: #4a4a4a;
+  color: #2E5E6F;
 }
 
 .about-us .section-heading {
@@ -1381,7 +1381,7 @@ Events Style
 .events .item ul li span {
   display: inline-block;
   font-size: 14px;
-  color: #4a4a4a;
+  color: #2E5E6F;
   margin-bottom: 10px;
 }
 
@@ -1479,7 +1479,7 @@ Contact Style
 
 .contact-us .special-offer h6 {
   font-size: 15px;
-  color: #4a4a4a;
+  color: #2E5E6F;
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 15px;
@@ -1630,6 +1630,10 @@ Contact Style
   font-weight: 400;
 }
 
+.form-check-label{
+  color: #5D9AAE !important;
+}
+
 /* 
 ---------------------------------------------
 Footer Style
@@ -1674,6 +1678,66 @@ footer::before {
   height: 119px;
   content: '';
   z-index: 2;
+}
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #002130;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #5D9AAE;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.whats {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 60px;
+  bottom: 15px;
+  z-index: 996;
+  background: #25D366;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.whats i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.whats:hover {
+  background: #075E54;
+  color: #fff;
+}
+
+.whats.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* 
@@ -1907,3 +1971,4 @@ body {
     width: 95%;
   }
 }
+
