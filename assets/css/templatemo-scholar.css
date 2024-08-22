@@ -101,7 +101,7 @@ ul {
 p {
   font-size: 14px;
   line-height: 28px;
-  color: #2E5E6F;
+  color: #FFFFFF;
 }
 
 img {
@@ -120,12 +120,12 @@ body {
 }
 
 ::selection {
-  background: #002130;
+  background: #002930;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #002130;
+  background: #002930;
   color: #fff;
 }
 
@@ -141,27 +141,27 @@ body {
 .section-heading h2 {
   font-size: 36px;
   font-weight: 600;
-  text-transform: capitalize;
   margin: 20px 0;
   line-height: 44px;
+  color: #FFFFFF;
 }
 
 .section-heading h2 em {
-  color: #002130;
+  color: #002930;
   font-style: normal;
 }
 
 .section-heading h6 {
-  color: #002130;
+  color: #002930;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.main-button a {
+.main-button button {
   display: inline-block;
   background-color: #fff;
-  color: #002130;
+  color: #002930;
   font-size: 14px;
   font-weight: 500;
   height: 40px;
@@ -171,8 +171,20 @@ body {
   transition: all .3s;
 }
 
-.main-button a:hover {
-  background-color: #002130;
+
+
+.main-button button a{
+  color: #002930;
+}
+
+
+.main-button button:hover {
+  background-color: #002930;
+  color: #fff;
+}
+
+.main-button button a:hover {
+  background-color: #002930;
   color: #fff;
 }
 
@@ -249,7 +261,7 @@ Pre-loader Style
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #002130;
+  background: #002930;
   border-radius: 50%;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -272,7 +284,7 @@ Pre-loader Style
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #002130;
+  background: #002930;
   border-radius: 50%;
 }
 
@@ -285,7 +297,7 @@ Header Style
 */
 
 .background-header {
-  background-color: #002130 !important;
+  background-color: #002930 !important;
   border-radius: 0px 0px 25px 25px;
   height: 80px!important;
   position: fixed!important;
@@ -563,7 +575,7 @@ Header Style
 @media (max-width: 767px) {
   .background-header .main-nav .nav,
   .header-area .main-nav .nav {
-    background-color: #5D9AAE;
+    background-color: #AC4A00;
   }
   .background-header .main-nav .nav li a,
   .header-area .main-nav .nav li a {
@@ -571,13 +583,13 @@ Header Style
     height: 50px;
     font-weight: 400;
     color: #1e1e1e;
-    background-color: #5D9AAE;
+    background-color: #AC4A00;
      border-radius: 0px 0px 25px 25px;
   }
   .background-header .main-nav .nav li,
   .header-area .main-nav .nav li {
     border-top: 1px solid #ddd;
-    background-color: #5D9AAE;
+    background-color: #AC4A00;
     height: 50px;
     border-radius: 0px 0px 25px 25px;
   }
@@ -607,7 +619,7 @@ Header Style
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #002130!important;
+    color: #002930!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -668,7 +680,7 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg-azul.PNG);
+  background-image: url(../images/banner-bg-verde.png);
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -697,7 +709,7 @@ Banner Style
 }
 
 .main-banner .item span.category {
-  background-color: #002130;
+  background-color: #002930;
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
@@ -730,9 +742,9 @@ Banner Style
   margin-right: 30px;
 }
 
-.main-banner .item .buttons .main-button a {
+.main-banner .item .buttons .main-button button {
   font-size: 14px;
-  color: #002130;
+  color: #002930;
   background-color: #fff;
   display: inline-block;
   height: 50px;
@@ -743,7 +755,7 @@ Banner Style
 }
 
 .main-banner .item .buttons .icon-button i {
-  color: #002130;
+  color: #002930;
   background-color: #fff;
   display: inline-block;
   height: 50px;
@@ -801,6 +813,10 @@ Services Style
 --------------------------------------------- 
 */
 
+#services{
+  background-color: #002930; 
+}
+
 .services .service-item:hover .icon img {
   margin-top: -10px;
 }
@@ -816,7 +832,7 @@ Services Style
   display: inline-block;
   text-align: center;
   line-height: 190px;
-  background-color: #002130;
+  background-color: #AC4A00;
   border-radius: 50%;
   position: absolute;
   right: 0;
@@ -831,7 +847,7 @@ Services Style
 .services .service-item .main-content {
   border-radius: 25px;
   padding: 80px 30px 50px 30px;
-  background-color: #5D9AAE;
+  background-color: #FFFFFF;
   margin-bottom: 30px;
   margin-right: 80px;
   transition: all .4s;
@@ -846,7 +862,7 @@ Services Style
 }
 
 .services .service-item p {
-  color: #2E5E6F;
+  color: #002930;
   margin-bottom: 25px;
 }
 
@@ -870,7 +886,7 @@ About Style
   z-index: -1;
   width: 84%;
   height: 100%;
-  background-color: #5D9AAE;
+  background-color: #AC4A00;
   content: '';
   border-top-left-radius: 500px;
   border-bottom-left-radius: 500px;
@@ -879,7 +895,7 @@ About Style
 .accordion {
   margin-top: -40px;
   margin-bottom: -40px;
-  background-color: #002130;
+  background-color: #002930;
   border-radius: 40px;
   padding: 80px 50px 50px 50px;
 }
@@ -898,7 +914,7 @@ About Style
 }
 
 .accordion-button:not(.collapsed) {
-  color: #002130;
+  color: #002930;
   background-color: #fff;
 }
 
@@ -920,7 +936,7 @@ h2.accordion-header button {
   text-align: center;
   line-height: 30px;
   border-radius: 50%;
-  background-color: #002130;
+  background-color: #002930;
   color: #fff;
 }
 
@@ -934,12 +950,14 @@ h2.accordion-header button {
   padding: 0px 25px 30px 25px;
   font-size: 14px;
   line-height: 28px;
-  color: #2E5E6F;
+  color: #002930;
 }
+
 
 .about-us .section-heading {
   margin-left: 60px;
   margin-bottom: 0px;
+  
 }
 
 .about-us .section-heading .main-button {
@@ -952,6 +970,9 @@ h2.accordion-header button {
 Courses Style
 --------------------------------------------- 
 */
+#trabalhos{
+  background-color: #002930; 
+}
 
 .courses {
   margin-top: 160px;
@@ -962,7 +983,7 @@ Courses Style
 }
 
 .event_filter {
-  background-color: #5D9AAE;
+  background-color: #FFFFFF;
   border-radius: 50px;
   padding: 15px 40px;
   list-style: none;
@@ -978,16 +999,19 @@ Courses Style
 .event_filter li a {
   font-size: 14px;
   font-weight: 500;
-  color: #1e1e1e;
+  color: #002930;
   transition: all .3s;
 }
-
 .event_filter li
-
 .event_filter li a.is_active,
 .event_filter li a:hover {
-  color: #002130;
+  color: #AC4A00;
+  font-size: 16px;
 }
+
+
+
+
 
 .events_item .thumb {
   position: relative;
@@ -999,25 +1023,12 @@ Courses Style
   margin-bottom: -5px;
 }
 
-.events_item .thumb span.category {
-  position: absolute;
-  left: 30px;
-  top: 30px;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #002130;
-  background-color: rgba(250, 250, 250, 0.95);
-  padding: 8px 20px;
-  border-radius: 25px;
-  font-weight: 500;
-  display: inline-block;
-}
 
 .events_item .thumb span.price {
   position: absolute;
   right: -30px;
   top: -50px;
-  background-color: rgba(0, 33, 48, 0.95);
+  background-color: #AC4A00;
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -1041,21 +1052,80 @@ Courses Style
   vertical-align: top;
 }
 
+
 .events_item {
-  background-color: #5D9AAE;
+  background-color: #fff;
   border-radius: 25px;
   margin-bottom: 30px;
   position: relative;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  transition: color 0.3s ease;
 } 
+
+
+.events_item .down-content {
+  position: relative;
+  z-index: 1; /* Garante que o conteúdo do card fique acima da animação */
+}
+
+.events_item span.category {
+  position: relative;
+  z-index: 1; /* Garante que o conteúdo do card fique acima da animação */
+}
+
+
+.events_item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #AC4A00; 
+  transform: scale(0);
+  transform-origin: right top;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.events_item:hover::before {
+  transform: scaleX(1);
+}
+
+
+.circle {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
+  background-color: #AC4A00; /* Cor da bolinha */
+  border-radius: 50%; 
+  transition: background-color 0.3s ease;/* Garante que a bolinha fique acima da animação */
+}
+
 
 .events_item .down-content {
   padding: 20px 30px 25px 30px;
 }
 
+.events_item  span.price {
+  position: absolute;
+  right: -30px;
+  top: -50px;
+  background-color: #AC4A00;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: -15px;
+  transition: all .3s;
+}
+
 .events_item .down-content span.author {
-  color: #002130;
+  color: #002930;
   font-size: 15px;
   display: inline-block;
   margin-bottom: 6px;
@@ -1066,9 +1136,19 @@ Courses Style
   font-weight: 600;
   transition: all .3s;
 }
+.events_item .down-content p {
+  font-size: 15px;
+  font-weight: 600;
+  transition: all .3s;
+  color: #002930;
+}
 
-.events_item:hover .down-content h4 {
-  color: #002130;
+.events_item:hover .down-content h4{
+  color: #FFFFFF;
+}
+
+.events_item:hover .down-content p{
+  color: #FFFFFF;
 }
 
 .events_item:hover .thumb span.price {
@@ -1096,7 +1176,7 @@ Facts Style
   z-index: -1;
   width: 95%;
   height: 100%;
-  background-color: #002130;
+  background-color: #002930;
   content: '';
   border-top-right-radius: 500px;
   border-bottom-right-radius: 500px;
@@ -1170,12 +1250,12 @@ Team Style
 .team-member .main-content {
   border-radius: 25px;
   padding: 140px 30px 40px 30px;
-  background-color: #5D9AAE;
+  background-color: #AC4A00;
   text-align: center;
 }
 
 .team-member .main-content span.category {
-  color: #002130;
+  color: #002930;
   font-size: 15px;
 }
 
@@ -1193,7 +1273,7 @@ Team Style
 
 .team-member .main-content ul li a {
   background-color: #fff;
-  color: #002130;
+  color: #002930;
   display: inline-block;
   text-align: center;
   line-height: 40px;
@@ -1205,7 +1285,7 @@ Team Style
 }
 
 .team-member .main-content ul li a:hover {
-  background-color: #002130;
+  background-color: #002930;
   color: #fff;
 }
 
@@ -1230,7 +1310,7 @@ Testimonials Style
   z-index: -1;
   width: 65%;
   height: 100%;
-  background-color: #5D9AAE;
+  background-color: #AC4A00;
   content: '';
   border-top-left-radius: 500px;
   border-bottom-left-radius: 500px;
@@ -1247,7 +1327,7 @@ Testimonials Style
 }
 
 .testimonials .item {
-  background-color: #002130;
+  background-color: #002930;
   border-radius: 25px;
   padding: 80px;
 }
@@ -1297,7 +1377,7 @@ Testimonials Style
   line-height: 50px;
   font-size: 24px;
   display: inline-block;
-  color: #002130;
+  color: #002930;
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
@@ -1328,7 +1408,7 @@ Events Style
 }
 
 .events .item {
-  background-color: #5D9AAE;
+  background-color: #AC4A00;
   border-radius: 25px;
   position: relative;
   padding: 40px;
@@ -1364,7 +1444,7 @@ Events Style
 .events .item ul li span.category {
   font-size: 14px;
   text-transform: uppercase;
-  color: #002130;
+  color: #002930;
   background-color: #fff;
   padding: 8px 20px;
   border-radius: 25px;
@@ -1381,13 +1461,13 @@ Events Style
 .events .item ul li span {
   display: inline-block;
   font-size: 14px;
-  color: #2E5E6F;
+  color: #FFFFFF;
   margin-bottom: 10px;
 }
 
 .events .item ul li h6 {
   font-size: 16px;
-  color: #002130;
+  color: #002930;
   font-weight: 600;
 }
 
@@ -1395,7 +1475,7 @@ Events Style
   position: absolute;
   right: 0;
   top: 22px;
-  background-color: #002130;
+  background-color: #002930;
   width: 60px;
   height: 120px;
   display: inline-block;
@@ -1428,7 +1508,7 @@ Contact Style
   z-index: -1;
   width: 65%;
   height: 100%;
-  background-color: #5D9AAE;
+  background-color: #AC4A00;
   content: '';
   border-top-right-radius: 500px;
   border-bottom-right-radius: 500px;
@@ -1457,7 +1537,7 @@ Contact Style
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #002130;
+  background-color: #002930;
   width: 80px;
   padding: 30px 8px;
   line-height: 25px;
@@ -1479,7 +1559,7 @@ Contact Style
 
 .contact-us .special-offer h6 {
   font-size: 15px;
-  color: #2E5E6F;
+  color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 400;
   margin-bottom: 15px;
@@ -1487,7 +1567,7 @@ Contact Style
 
 .contact-us .special-offer h6 em {
   font-style: normal;
-  color: #002130;
+  color: #002930;
   font-weight: 600;
 }
 
@@ -1498,7 +1578,7 @@ Contact Style
 
 .contact-us .special-offer h4 em {
   font-style: normal;
-  color: #002130;
+  color: #002930;
 }
 
 .contact-us .special-offer a {
@@ -1510,7 +1590,7 @@ Contact Style
   display: inline-block;
   text-align: center;
   line-height: 50px;
-  background-color: #002130;
+  background-color: #002930;
   color: #fff;
   border-radius: 50%;
 }
@@ -1518,7 +1598,7 @@ Contact Style
 .contact-us .contact-us-content {
   border-radius: 25px;
   padding: 80px;
-  background-color: #002130;
+  background-color: #002930;
   position: relative;
   z-index: 1;
 }
@@ -1595,7 +1675,7 @@ Contact Style
   background-color: #fff;
   padding: 0px 25px;
   border-radius: 25px;
-  color: #002130;
+  color: #002930;
   transition: all .4s;
   position: relative;
   z-index: 3;
@@ -1631,7 +1711,7 @@ Contact Style
 }
 
 .form-check-label{
-  color: #5D9AAE !important;
+  color: #AC4A00 !important;
 }
 
 /* 
@@ -1643,7 +1723,7 @@ Footer Style
 footer {
   margin-top: 150px;
   position: relative;
-  background-color: #002130;
+  background-color: #002930;
   vertical-align: middle;
   min-height: 150px;
   border-radius: 150px 150px 0px 0px;
@@ -1687,7 +1767,7 @@ footer::before {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #002130;
+  background: #002930;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -1701,7 +1781,7 @@ footer::before {
 }
 
 .back-to-top:hover {
-  background: #5D9AAE;
+  background: #AC4A00;
   color: #fff;
 }
 
@@ -1740,6 +1820,53 @@ footer::before {
   opacity: 1;
 }
 
+.modal-header{
+  background-color: #AC4A00;
+  color: #FFFFFF;
+}
+
+.modal-header h5{
+  background-color: #AC4A00;
+  color: #FFFFFF;
+}
+.modal-footer{
+  background-color: #AC4A00;
+  color: #FFFFFF;
+}
+
+
+.modal-footer button:hover {
+  background-color: #002930;
+  color: #fff;
+}
+.modal-footer button{
+  display: inline-block;
+  background-color: #fff;
+  color: #002930;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 25px;
+  border: none;
+  border-radius: 20px;
+  transition: all .3s;
+}
+
+
+.modal-body h8{
+  color: #002930;
+}
+
+.modal-body ul {
+  color: #002930;
+  list-style-type: disc; /* Define bolinhas como marcadores */
+  padding-left: 20px; /* Ajusta a margem interna para a lista */
+}
+.modal-body li {
+  margin-bottom: 5px;
+  margin-top: 5px; /* Espaçamento entre os itens da lista */
+}
 /* 
 ---------------------------------------------
 Responsive Style
@@ -1851,8 +1978,8 @@ body {
   .about-us .section-heading .main-button {
     margin-top: 30px;
   }
-  .about-us .main-button a {
-    background-color: #002130;
+  .about-us .main-button button {
+    background-color: #002930;
     color: #fff;
   }
   .courses {
@@ -1937,7 +2064,7 @@ body {
     margin-right: 0px;
   }
   .contact-us .special-offer {
-    background-color: #5D9AAE;
+    background-color: #AC4A00;
     margin-bottom: 60px;
     padding: 34px 30px 34px 100px;
     width: 100%;

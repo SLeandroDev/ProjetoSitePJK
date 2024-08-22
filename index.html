@@ -57,11 +57,12 @@ https://templatemo.com/tm-586-scholar
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                       <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                      <li class="scroll-to-section"><a href="#services">Serviços</a></li>
+                      <li class="scroll-to-section"><a href="#services">Especializações</a></li>
                       <li class="scroll-to-section"><a href="#trabalhos">Trabalhos</a></li>
                       <li class="scroll-to-section"><a href="#team">Equipe</a></li>
-                      <li class="scroll-to-section"><a href="#events">Events</a></li>
                       <li class="scroll-to-section"><a href="#contact">Contatos</a></li>
+                      <li class="scroll-to-section"><a href="#sobreNos">Sobre nós</a></li>
+                      <li class="scroll-to-section"><a href="#feedbacks">Depoimentos</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -86,7 +87,7 @@ https://templatemo.com/tm-586-scholar
                 <p>Scholar is free CSS template designed by TemplateMo for online educational related websites. This layout is based on the famous Bootstrap v5.3.0 framework.</p>
                 <div class="buttons">
                   <div class="main-button">
-                    <a href="#">Request Demo</a>
+                    <button type="button" data-toggle="modal" data-target="#exampleModal">Leia mais...</button>
                   </div>
                   <div class="icon-button">
                     <a href="#"><i class="fa fa-play"></i> What's Scholar?</a>
@@ -101,7 +102,7 @@ https://templatemo.com/tm-586-scholar
                 <p>You are allowed to use this template for any educational or commercial purpose. You are not allowed to re-distribute the template ZIP file on any other website.</p>
                 <div class="buttons">
                   <div class="main-button">
-                    <a href="#">Request Demo</a>
+                    <button type="button" data-toggle="modal" data-target="#exampleModal">Leia mais...</button>
                   </div>
                   <div class="icon-button">
                     <a href="#"><i class="fa fa-play"></i> What's the best result?</a>
@@ -116,7 +117,7 @@ https://templatemo.com/tm-586-scholar
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporious incididunt ut labore et dolore magna aliqua suspendisse.</p>
                 <div class="buttons">
                   <div class="main-button">
-                    <a href="#">Request Demo</a>
+                    <button type="button" data-toggle="modal" data-target="#exampleModal">Leia mais...</button>
                   </div>
                   <div class="icon-button">
                     <a href="#"><i class="fa fa-play"></i> What's Online Course?</a>
@@ -145,7 +146,7 @@ https://templatemo.com/tm-586-scholar
                 Defendemos seus interesses em questões civis, garantindo a proteção do seu patrimônio, contratos, 
                 e direitos em disputas judiciais ou extrajudiciais. Conte com uma representação sólida e comprometida para resolver seus problemas de maneira eficiente.</p>
               <div class="main-button">
-                <a href="#">Leia mais...</a>
+                <button type="button" data-toggle="modal" data-target="#modalCivel">Leia mais...</button>
               </div>
             </div>
           </div>
@@ -163,7 +164,7 @@ https://templatemo.com/tm-586-scholar
                 guarda de filhos, pensão alimentícia, e inventários. Atuamos com sensibilidade e 
                 profissionalismo, priorizando o bem-estar de todos os envolvidos.</p>
               <div class="main-button">
-                <a href="#">Leia mais...</a>
+                <button type="button" data-toggle="modal" data-target="#modalFamilia">Leia mais...</button>
               </div>
             </div>
           </div>
@@ -179,7 +180,7 @@ https://templatemo.com/tm-586-scholar
               <p>Oferecemos assessoria especializada para garantir que você tenha acesso aos benefícios previdenciários aos 
                 quais tem direito. Seja na concessão de aposentadorias, revisões ou outros benefícios, estamos aqui para proteger seus direitos e assegurar seu futuro.</p>
               <div class="main-button">
-                <a href="#">Leia mais...</a>
+                <button type="button" data-toggle="modal" data-target="#modalPrevidenciario">Leia mais...</button>
               </div>
             </div>
           </div>
@@ -196,7 +197,7 @@ https://templatemo.com/tm-586-scholar
                 reclamações trabalhistas, acordos coletivos e muito mais. 
                 Conte com minha experiência para assegurar que seus interesses sejam defendidos com rigor e transparência.</p>
               <div class="main-button">
-                <a href="#">Leia mais...</a>
+                <button type="button" data-toggle="modal" data-target="#modalTrabalhista">Leia mais...</button>
               </div>
             </div>
           </div>
@@ -205,7 +206,7 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div>
 
-  <div class="section about-us">
+  <div class="section about-us" id="sobreNos">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-1">
@@ -283,7 +284,7 @@ https://templatemo.com/tm-586-scholar
             <h2>Um pouco sobre nós</h2>
             <p>Bem-vindo ao nosso escritório de advocacia, onde a dedicação, o comprometimento e a busca por resultados justos guiam todas as nossas ações. Com ampla experiência nas áreas de Direito Cível, Direito de Família e Direito Previdenciário, estamos aqui para proteger seus direitos e garantir que você tenha a melhor assistência jurídica possível.</p>
             <div class="main-button">
-              <a href="#">Saiba mais!!!</a>
+              <button type="button" onclick="scrollToSection('feedbacks')">Saiba mais...</button>
             </div>
           </div>
         </div>
@@ -296,8 +297,7 @@ https://templatemo.com/tm-586-scholar
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            <h6>Latest Courses</h6>
-            <h2>Latest Courses</h2>
+            <h2>Serviços Prestados</h2>
           </div>
         </div>
       </div>
@@ -319,129 +319,341 @@ https://templatemo.com/tm-586-scholar
         </li>
       </ul>
       <div class="row event_box">
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 civel">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  familia">
           <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-01.jpg" alt=""></a>
-              <span class="category">Cível</span>
-              <span class="price"><h6><em>$</em>160</h6></span>
-            </div>
             <div class="down-content">
-              <span class="author">Stella Blair</span>
-              <h4>Learn Web Design</h4>
+              
+              <h4> Alimentos | Requerimento e Cobrança</h4> <br />
+              <p>Assistência na obtenção e cobrança de pensão alimentícia, assegurando os direitos do alimentando.</p>
             </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  previdenciario">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4> Aposentadoria</h4> <br />
+              <p>Assessoria na obtenção de aposentadoria, incluindo cálculos e documentação necessária.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  trabalhista">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4> Adicionais de Insalubridade e Periculosidade</h4> <br />
+              <p>Consultoria para a reivindicação de adicionais de insalubridade e periculosidade.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  civel">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4> Cobrança Judicial e Extrajudicial</h4> <br />
+              <p>Consultoria para cobrança judicial e extrajudicial de dívidas e créditos.</p>
+            </div>
+            <div class="circle"></div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  familia">
           <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-02.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price"><h6><em>$</em>340</h6></span>
-            </div>
             <div class="down-content">
-              <span class="author">Cindy Walker</span>
-              <h4>Web Development Tips</h4>
+              
+              <h4>Casamento | Pacto Antenupcial/Escolha de Regime de Bens </h4> <br />
+              <p>Orientação na escolha do regime de bens e na elaboração de pacto antenupcial, protegendo os interesses do casal</p>
             </div>
+            <div class="circle"></div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 civel previdenciario">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  previdenciario">
           <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-03.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price"><h6><em>$</em>640</h6></span>
-            </div>
             <div class="down-content">
-              <span class="author">David Hutson</span>
-              <h4>Latest Web Trends</h4>
+              
+              <h4> Auxílio-Doença e Auxílio-Acidente</h4> <br />
+              <p>Orientação para solicitação e manutenção de auxílios por doença ou acidente</p>
             </div>
+            <div class="circle"></div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 familia">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  trabalhista">
           <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-04.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price"><h6><em>$</em>450</h6></span>
-            </div>
             <div class="down-content">
-              <span class="author">Stella Blair</span>
-              <h4>Online Learning Steps</h4>
+              
+              <h4> Férias</h4> <br />
+              <p>Assessoria sobre direitos e cálculos de férias, incluindo prazos e pagamentos.</p>
             </div>
+            <div class="circle"></div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 previdenciario">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  civel">
           <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-05.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price"><h6><em>$</em>320</h6></span>
-            </div>
             <div class="down-content">
-              <span class="author">Sophia Rose</span>
-              <h4>Be a WordPress Master</h4>
+              
+              <h4>Contratos</h4> <br />
+              <p>Assessoria na elaboração e revisão de contratos, garantindo conformidade legal.</p>
             </div>
+            <div class="circle"></div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 previdenciario civel">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  familia">
           <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-06.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price"><h6><em>$</em>240</h6></span>
-            </div>
             <div class="down-content">
-              <span class="author">David Hutson</span>
-              <h4>Full Stack Developer</h4>
+              
+              <h4>Divórcio</h4> <br />
+              <p>Assessoria em processos de divórcio, com foco na proteção dos direitos e no melhor interesse dos envolvidos</p>
             </div>
+            <div class="circle"></div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 trabalhista">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  previdenciario">
           <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-06.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price"><h6><em>$</em>240</h6></span>
-            </div>
             <div class="down-content">
-              <span class="author">David Hutson</span>
-              <h4>Full Stack Developer</h4>
+              
+              <h4> Auxílio-Reclusão</h4> <br />
+              <p>Consultoria sobre o benefício de auxílio-reclusão para dependentes de segurados presos</p>
             </div>
+            <div class="circle"></div>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  trabalhista">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4> Horas Extras | Horas de intrajornada, horas de sobreaviso</h4> <br />
+              <p>Orientação para o correto pagamento de horas extras e horas de sobreaviso.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  civel">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Execução</h4> <br />
+              <p>Suporte em processos de execução para cumprimento de obrigações.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  familia">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Doação</h4> <br />
+              <p>Assistência na formalização de doações, garantindo que sejam feitas de acordo com a legislação vigente</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  previdenciario">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>LOAS</h4> <br />
+              <p>Assistência para benefícios assistenciais previstos na Lei Orgânica da Assistência Social (LOAS).</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  trabalhista">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Participação nos Lucros e Resultados (PLR)</h4> <br />
+              <p>Consultoria sobre participação nos lucros e resultados da empresa.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  civel">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Imobiliário</h4> <br />
+              <p>Consultoria para questões imobiliárias, incluindo compra, venda e locação de imóveis.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  familia">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Filiação | Adoção e Investigação de Paternidade</h4> <br />
+              <p>Suporte jurídico em processos de adoção e investigação de paternidade, assegurando o reconhecimento dos laços familiares</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  previdenciario">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Pensão por Morte</h4> <br />
+              <p>Suporte na solicitação de pensão por morte para dependentes de segurados do INSS.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  trabalhista">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Pedido de Homologação Judicial de Demissão de Empregado</h4> <br />
+              <p>Assistência na homologação judicial de demissão para garantir direitos trabalhistas.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  civel">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Indenizações</h4> <br />
+              <p>Assessoria para reivindicação de indenizações por danos materiais e morais.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  familia">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Guarda e Regularização de Visitas de Menores</h4> <br />
+              <p>Assistência em questões de guarda e visitação, sempre visando o melhor interesse da criança</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  previdenciario">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Salário Maternidade</h4> <br />
+              <p>Assessoria para a concessão de salário-maternidade para seguradas do INSS.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  trabalhista">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Reconhecimento de Vínculo Empregatício</h4> <br />
+              <p>Suporte para o reconhecimento de vínculo empregatício e direitos associados.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  civel">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Responsabilização Civil</h4> <br />
+              <p>Orientação para a responsabilização civil por danos causados a terceiros.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  familia">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Interdição</h4> <br />
+              <p>Orientação e suporte em processos de interdição, protegendo os interesses dos incapazes</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  trabalhista">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Rescisão Indireta do Contrato de Trabalho</h4> <br />
+              <p>Orientação para rescisão indireta do contrato de trabalho, garantindo direitos do empregado.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  familia">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Inventário</h4> <br />
+              <p>Consultoria em processos de inventário, assegurando a partilha de bens de forma justa e dentro da legalidade</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  trabalhista">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Verbas Rescisórias</h4> <br />
+              <p>Assessoria no cálculo e recebimento de verbas rescisórias.</p>
+            </div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  familia">
+          <div class="events_item">
+            <div class="down-content">
+              
+              <h4>Testamento</h4> <br />
+              <p>Assessoria na elaboração e registro de testamentos, garantindo que sua vontade seja respeitada</p>
+            </div>
+            <div class="circle">
+            </div>
+              
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+       
+
       </div>
     </div>
   </section>
-
-  <div class="section fun-facts">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="wrapper">
-            <div class="row">
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
-                   <p class="count-text ">Happy Students</p>
+  <!--
+    <div class="section fun-facts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="wrapper">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="counter">
+                    <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
+                     <p class="count-text ">Happy Students</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
-                  <p class="count-text ">Course Hours</p>
+                <div class="col-lg-3 col-md-6">
+                  <div class="counter">
+                    <h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
+                    <p class="count-text ">Course Hours</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
-                  <p class="count-text ">Employed Students</p>
+                <div class="col-lg-3 col-md-6">
+                  <div class="counter">
+                    <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
+                    <p class="count-text ">Employed Students</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter end">
-                  <h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2>
-                  <p class="count-text ">Years Experience</p>
+                <div class="col-lg-3 col-md-6">
+                  <div class="counter end">
+                    <h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2>
+                    <p class="count-text ">Years Experience</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -449,8 +661,7 @@ https://templatemo.com/tm-586-scholar
         </div>
       </div>
     </div>
-  </div>
-
+  -->
   <div class="team section" id="team">
     <div class="container">
       <div class="row">
@@ -458,7 +669,6 @@ https://templatemo.com/tm-586-scholar
           <div class="team-member">
             <div class="main-content">
               <img src="assets/images/member-03.jpg" alt="">
-              <span class="category">Full Stack Master</span>
               <h4>Dr. Jéssica Costa</h4>
               <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
@@ -472,7 +682,6 @@ https://templatemo.com/tm-586-scholar
           <div class="team-member">
             <div class="main-content">
               <img src="assets/images/member-04.jpg" alt="">
-              <span class="category">Digital Animator</span>
               <h4>Dr. Patrícia</h4>
               <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
@@ -486,7 +695,7 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div> 
 
-  <div class="section testimonials">
+  <div class="section testimonials" id="feedbacks">
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
@@ -521,6 +730,7 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div>
 
+  <!--
   <div class="section events" id="events">
     <div class="container">
       <div class="row">
@@ -629,21 +839,16 @@ https://templatemo.com/tm-586-scholar
       </div>
     </div>
   </div>
-
+  -->
   <div class="contact-us section" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-6  align-self-center">
           <div class="section-heading">
-            <h6>Contact Us</h6>
-            <h2>Feel free to contact us anytime</h2>
-            <p>Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of charge. You may support us by sharing our website to your friends.</p>
-            <div class="special-offer">
-              <span class="offer">off<br><em>50%</em></span>
-              <h6>Valide: <em>24 April 2036</em></h6>
-              <h4>Special Offer <em>50%</em> OFF!</h4>
-              <a href="#"><i class="fa fa-angle-right"></i></a>
-            </div>
+            <h6>Contate-nos</h6>
+            <h2>Sinta-se à vontade para entrar em contato conosco a qualquer momento</h2>
+            <p>Estamos aqui para ajudar com qualquer questão jurídica. Entre em contato conosco para uma consulta personalizada</p>
+            
           </div>
         </div>
         <div class="col-lg-6">
@@ -656,7 +861,7 @@ https://templatemo.com/tm-586-scholar
                   </fieldset>
                 </div>
                 <div class="col-lg-12" >
-                  <label style="color: #fff !important;">Selecione abaixo sua área desejada</label>
+                  <label style="color: #fff !important;">Selecione abaixo a área desejada</label>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-check">
@@ -689,7 +894,7 @@ https://templatemo.com/tm-586-scholar
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <button id="form-submit" class="orange-button" onclick="enviarWhatsApp()">Send Message Now</button>
+                    <button id="form-submit" class="orange-button" onclick="enviarWhatsApp()">Enviar</button>
                   </fieldset>
                 </div>
               </div>
@@ -710,6 +915,124 @@ https://templatemo.com/tm-586-scholar
 
   <a href="https://wa.me/+5511983897469" target="_blank" rel="noopener noreferrer" class="whats d-flex align-items-center justify-content-center active"><i class="fa-brands fa-whatsapp"></i></a>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="fa-solid fa-arrow-up"></i></a>
+
+
+  <!-- Modais -->
+
+  <div class="modal fade" id="modalCivel" tabindex="-1" role="dialog" aria-labelledby="exemploModalCivel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCivelLabel">Direito Cível</h5>
+        </div>
+        <div class="modal-body">
+          <h8>
+              O Direito Cível é a área do direito que regula as relações entre pessoas e entidades em questões não criminais. Ele abrange:
+          </h8>
+          
+          <ul>
+              <li><strong>Contratos:</strong> Elaboração e cumprimento de acordos.</li>
+              <li><strong>Responsabilidade Civil:</strong> Obrigações e reparação de danos causados.</li>
+              <li><strong>Família e Sucessões:</strong> Questões de casamento, divórcio, e herança.</li>
+              <li><strong>Propriedade Imobiliária:</strong> Compra, venda e locação de imóveis.</li>
+          </ul>
+          <h8>
+              O Direito Cível é essencial para resolver disputas e regular interações no dia a dia, assegurando que direitos e deveres sejam respeitados.
+          </h8>
+      </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalTrabalhista" tabindex="-1" role="dialog" aria-labelledby="exemploModalTrabalhista" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTrabalhistaLabel">Direito Trabalhista</h5>
+        </div>
+        <div class="modal-body">
+          <h8>
+            O Direito Trabalhista regula as relações entre empregadores e empregados, garantindo condições justas de trabalho. Abrange:
+          </h8>
+          
+          <ul>
+              <li><strong>Contratos de Trabalho:</strong>  Regras para contratação e direitos das partes.</li>
+              <li><strong>Jornadas e Horas Extras:</strong>  Regras sobre a duração do trabalho e pagamento de horas extras.</li>
+              <li><strong>Remuneração e Benefícios:</strong>  Salários, férias, e adicionais.</li>
+              <li><strong>Rescisão de Contrato:</strong>  Procedimentos para demissão e verbas rescisórias.</li>
+              <li><strong>Segurança e Saúde:</strong> Normas para um ambiente de trabalho seguro.</li>
+          </ul>
+          <h8>
+            Essencial para assegurar direitos trabalhistas e promover um ambiente de trabalho equilibrado.
+          </h8>
+      </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalPrevidenciario" tabindex="-1" role="dialog" aria-labelledby="exemploModalPrevidenciario" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPrevidenciarioLabel">Direito Previdenciário</h5>
+        </div>
+        <div class="modal-body">
+          <h8>
+            O Direito Trabalhista regula as relações entre empregadores e empregados, garantindo condições justas de trabalho. Abrange:
+          </h8>
+          
+          <ul>
+              <li><strong>Aposentadoria:</strong>   Regras para concessão de aposentadoria por tempo de contribuição, idade ou invalidez.</li>
+              <li><strong>Auxílios:</strong>   Benefícios como auxílio-doença, auxílio-acidente e auxílio-reclusão.</li>
+              <li><strong>Pensão:</strong>   Direitos a pensões por morte e pensão por invalidez.</li>
+              <li><strong>LOAS:</strong>   Benefícios da Lei Orgânica de Assistência Social, como o BPC (Benefício de Prestação Continuada).</li>
+              <li><strong>Salário-Maternidade:</strong>  Benefício para mães trabalhadoras durante o período de licença maternidade.</li>
+          </ul>
+          <h8>
+            Essencial para garantir a proteção social e a segurança financeira em momentos de necessidade.
+          </h8>
+      </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalFamilia" tabindex="-1" role="dialog" aria-labelledby="exemploModalFamilia" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFamiliaLabel">Direito de Família</h5>
+        </div>
+        <div class="modal-body">
+          <h8>
+            O Direito de Família regula as questões legais relacionadas às relações familiares e aos vínculos afetivos. Abrange:
+          </h8>
+          
+          <ul>
+              <li><strong>Casamento e União Estável:</strong>    Regras sobre pacto antenupcial, regimes de bens e reconhecimento de uniões estáveis.</li>
+              <li><strong>Divórcio e Separação:</strong>   Procedimentos para dissolução do casamento e divisão de bens.</li>
+              <li><strong>Guarda e Visitação:</strong>    Questões sobre a custódia de filhos e direitos de visitação.</li>
+              <li><strong>Pensão Alimentícia:</strong>    Requisitos e cálculos para a obrigação de sustento dos filhos e ex-cônjuges.</li>
+              <li><strong>Sucessão:</strong>   Regras sobre herança e inventário após o falecimento de um familiar.</li>
+          </ul>
+          <h8>
+            Essencial para regular e resolver conflitos familiares, assegurando direitos e deveres no âmbito familiar.
+          </h8>
+      </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -718,8 +1041,18 @@ https://templatemo.com/tm-586-scholar
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script>
+
+    function scrollToSection(id) {
+      var section = document.getElementById(id);
+      if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
     function enviarWhatsApp() {
     
       var checkboxes = document.getElementsByName("opcoes");
@@ -740,13 +1073,11 @@ https://templatemo.com/tm-586-scholar
       var mensagem = document.getElementById("message").value;
 
       var texto = `Olá, me chamo *${nome}* e estou a procura de um(a) advogada que atue na(s) área(s) *${area}.* %0A%0AAbaixo explico a(s) minha(s) necessidade(s): %0A%0A${mensagem}`;
-      var numeroTelefone = "5511983897469"; // Coloque o número de telefone aqui, no formato internacional
+      var numeroTelefone = "5511972484546"; // Coloque o número de telefone aqui, no formato internacional
 
       var url = `https://wa.me/${numeroTelefone}?text=${texto}`;
      
       window.open(url);
-
-
       
     }
   </script>
