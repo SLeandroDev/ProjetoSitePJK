@@ -688,15 +688,19 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-item-01.jpg);
+  background-image: url(../images/banner-bg-laranja.png);
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/banner-item-02.jpg);
+  background-image: url(../images/banner-bg-laranja.png);
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/banner-item-03.jpg);
+  background-image: url(../images/banner-bg-laranja.png);
+}
+
+.main-banner .item-4 {
+  background-image: url(../images/direitoPrevidenciario.jpg);
 }
 
 .main-banner .item {
@@ -719,28 +723,34 @@ Banner Style
   margin-bottom: 50px;
 }
 
+
 .main-banner .item h2 {
   font-size: 48px;
   font-weight: 700;
-  color: #fff;
+  color: #002930;
   line-height: 70px;
   width: 60%;
   margin-bottom: 40px;
 }
 
 .main-banner .item p {
-  color: #fff;
+  color: #AC4A00;
   width: 65%;
 }
+
 
 .main-banner .item .buttons {
   display: flex;
   margin-top: 50px;
 }
 
+
+
 .main-banner .item .buttons .main-button {
   margin-right: 30px;
 }
+
+
 
 .main-banner .item .buttons .main-button button {
   font-size: 14px;
@@ -752,6 +762,11 @@ Banner Style
   padding: 0px 25px;
   border-radius: 25px;
   font-weight: 500;
+}
+
+.main-banner .item .buttons .main-button button:hover {
+  background-color: #002930;
+  color: #fff;
 }
 
 .main-banner .item .buttons .icon-button i {
