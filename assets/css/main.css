@@ -688,15 +688,15 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/banner-bg-laranja.png);
+  background-image: url(../images/Fundo1.png);
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/banner-bg-laranja.png);
+  background-image: url(../images/Fundo2.png);
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/banner-bg-laranja.png);
+  background-image: url(../images/Fundo3.png);
 }
 
 .main-banner .item-4 {
@@ -727,14 +727,14 @@ Banner Style
 .main-banner .item h2 {
   font-size: 48px;
   font-weight: 700;
-  color: #002930;
+  color: #AC4A00;
   line-height: 70px;
   width: 60%;
   margin-bottom: 40px;
 }
 
 .main-banner .item p {
-  color: #AC4A00;
+  color: #002930;
   width: 65%;
 }
 
