@@ -915,6 +915,16 @@ About Style
   padding: 80px 50px 50px 50px;
 }
 
+.accordion-title {
+  border-radius: 40px !important;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.accordion-title h6{
+  color: #fff !important; 
+}
+
 .accordion-item {
   background-color: #fff;
   border-radius: 40px !important;
@@ -970,7 +980,7 @@ h2.accordion-header button {
 
 
 .about-us .section-heading {
-  margin-left: 60px;
+  margin-left: 100px;
   margin-bottom: 0px;
   
 }
