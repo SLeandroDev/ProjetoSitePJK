@@ -1280,7 +1280,7 @@ Team Style
 }
 
 .team-member .main-content span.category {
-  color: #002930;
+  color: #fff;
   font-size: 15px;
 }
 
@@ -1289,6 +1289,11 @@ Team Style
   font-weight: 600;
   margin-top: 8px;
   margin-bottom: 15px;
+  color: #fff;
+}
+
+.team-member .main-content h6{
+  color: #fff;
 }
 
 .team-member .main-content ul li {
@@ -1298,7 +1303,7 @@ Team Style
 
 .team-member .main-content ul li a {
   background-color: #fff;
-  color: #002930;
+  color: #fff;
   display: inline-block;
   text-align: center;
   line-height: 40px;
