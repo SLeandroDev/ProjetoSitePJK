@@ -1109,14 +1109,15 @@ Courses Style
   width: 100%;
   height: 100%;
   background-color: #AC4A00; 
+  border-radius: 0 0 0 30%;
   transform: scale(0);
   transform-origin: right top;
-  transition: transform 0.5s ease;
+  transition: transform 0.8s ease;
   z-index: 0;
 }
 
 .events_item:hover::before {
-  transform: scaleX(1);
+  transform: scale(1);
 }
 
 
@@ -1566,6 +1567,11 @@ Contact Style
 .contact-us  .section-heading p {
   margin-top: 50px;
 }
+
+.contact-us .section-heading h6 {
+  color:#fff !important;
+}
+
 
 .contact-us .special-offer {
   margin-top: 50px;
