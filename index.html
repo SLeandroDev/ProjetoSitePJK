@@ -867,25 +867,25 @@ https://templatemo.com/tm-586-scholar
                 </div>
                 <div class="col-lg-6">
                   <div class="form-check">
-                    <label class="form-check-label" for="inlineCheckbox1">Trabalhista</label>
-                    <input class="form-check-input" type="checkbox" name="opcoes" id="checkTrabalhista" value="Trabalhista">
+                    <label class="form-check-label" for="inlineche1">Trabalhista</label>
+                    <input class="form-check-input" type="checkbox" name="opcoes" id="radioTrabalhista" value="Trabalhista">
                     
                   </div>
                   <div class="form-check">
-                    <label class="form-check-label" for="inlineCheckbox2">Previdenciário</label>
-                    <input class="form-check-input" type="checkbox" name="opcoes" id="checkPrevidenciario" value="Previdenciário">
+                    <label class="form-check-label" for="inlineradio2">Previdenciário</label>
+                    <input class="form-check-input" type="checkbox" name="opcoes" id="radioPrevidenciario" value="Previdenciário">
                     
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-check">
-                    <label class="form-check-label" for="inlineCheckbox1">Cível</label>
-                    <input class="form-check-input" type="checkbox" name="opcoes" id="checkCivel" value="Cível">
+                    <label class="form-check-label" for="inlineradio1">Cível</label>
+                    <input class="form-check-input" type="checkbox" name="opcoes" id="radioCivel" value="Cível">
                     
                   </div>
                   <div class="form-check">
-                    <label class="form-check-label" for="inlineCheckbox2">Família</label>
-                    <input class="form-check-input" type="checkbox" name="opcoes" id="checkFamilia" value="Família">
+                    <label class="form-check-label" for="inlineradio2">Família</label>
+                    <input class="form-check-input" type="checkbox" name="opcoes" id="radioFamilia" value="Família">
                     
                   </div>
                 </div>
@@ -1117,7 +1117,7 @@ https://templatemo.com/tm-586-scholar
       
 
       var texto = `Olá, me chamo ${nome}.\n`;
-            texto += `Estou em busca de um advogado que atue nas áreas: ${area}\n`;
+            texto += `Estou em busca de um advogado que atue na área: ${area}\n`;
             texto += `Minha necessidade é:\n`;
             texto += `${mensagem}`;
 
@@ -1132,11 +1132,31 @@ https://templatemo.com/tm-586-scholar
 
 
       // Abre o WhatsApp em uma nova aba
+
       window.open(urlWhatsApp, '_blank');
 
-      window.location.href = 'https://www.pjkadvocacia.com';
+      location.reload();
 
     }
+
+    document.querySelectorAll('input[name="opcoes"]').forEach((checkbox) => {
+    checkbox.addEventListener('change', () => {
+        // Verifica se o checkbox foi selecionado
+        if (checkbox.checked) {
+            // Desabilita todos os outros checkboxes
+            document.querySelectorAll('input[name="opcoes"]').forEach((c) => {
+                if (c !== checkbox) {
+                    c.disabled = true; // Desabilita os outros checkboxes
+                }
+            });
+        } else {
+            // Se o checkbox foi desmarcado, habilita todos os checkboxes
+            document.querySelectorAll('input[name="opcoes"]').forEach((c) => {
+                c.disabled = false; // Habilita todos os checkboxes
+            });
+        }
+    });
+});
   </script>
 
   </body>

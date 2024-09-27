@@ -1762,7 +1762,10 @@ Contact Style
 .form-check-label{
   color: #AC4A00 !important;
 }
-
+.form-check-input:checked + .form-check-label::before {
+  background-color: #28a745; /* Cor de fundo quando selecionado (verde, por exemplo) */
+  border: 2px solid #007bff; /* Cor da borda quando selecionado */
+}
 /* 
 ---------------------------------------------
 Footer Style
