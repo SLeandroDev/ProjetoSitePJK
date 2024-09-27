@@ -896,7 +896,7 @@ https://templatemo.com/tm-586-scholar
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <button id="form-submit" class="orange-button" onclick="enviarWhatsApp()">Enviar</button>
+                    <button id="form-submit" type="button" class="orange-button" onclick="validarCampos()">Enviar</button>
                   </fieldset>
                 </div>
               </div>
@@ -1035,6 +1035,23 @@ https://templatemo.com/tm-586-scholar
       </div>
     </div>
   </div>
+
+  <!-- Modal de alerta -->
+  <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="alertModalLabel">Atenção</h5>
+        </div>
+        <div class="modal-body" id="modalErro">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" onclick="fechaModal()">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -1049,14 +1066,37 @@ https://templatemo.com/tm-586-scholar
 
   <script>
 
+    function validarCampos() {
+      var nome = document.getElementById('name').value.trim();
+      var mensagem = document.getElementById('message').value.trim();
+
+      if (nome === "" || mensagem === "") {
+        exibirErroModal("Por favor, preencha o seu nome e a sua necessidade antes de enviar.");
+        return false;
+      }
+
+      // Se tudo estiver correto, chama a função enviarWhatsApp
+      enviarWhatsApp(event);
+    }
+
+    function exibirErroModal(mensagemErro) {
+      document.getElementById('modalErro').innerHTML = mensagemErro;
+      $('#alertModal').modal('show');
+    }
+
+    function fechaModal(){
+      $('#alertModal').modal('hide');
+    }
+
     function scrollToSection(id) {
       var section = document.getElementById(id);
       if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
       }
     }
-    function enviarWhatsApp() {
+    function enviarWhatsApp(event) {
     
+      event.preventDefault(); // Evita o envio do formulário
       var checkboxes = document.getElementsByName("opcoes");
       var valoresSelecionados = [];
 
@@ -1071,16 +1111,31 @@ https://templatemo.com/tm-586-scholar
 
 
       var area = valoresSelecionados.join(", ")
-      var nome = document.getElementById("name").value;
-      var mensagem = document.getElementById("message").value;
+      var nome = document.getElementById("name").value.trim();
+      var mensagem = document.getElementById("message").value.trim();
 
-      var texto = `Olá, me chamo *${nome}* e estou a procura de um(a) advogado(a) que atue na(s) área(s) *${area}.* %0A%0AAbaixo explico a(s) minha(s) necessidade(s): %0A%0A${mensagem}`;
-      var numeroTelefone = "5511949240664"; // Coloque o número de telefone aqui, no formato internacional
-
-      var url = `https://wa.me/${numeroTelefone}?text=${texto}`;
-     
-      window.open(url);
       
+
+      var texto = `Olá, me chamo ${nome}.\n`;
+            texto += `Estou em busca de um advogado que atue nas áreas: ${area}\n`;
+            texto += `Minha necessidade é:\n`;
+            texto += `${mensagem}`;
+
+      // Codifica a mensagem para a URL
+      var textoCodificado = encodeURIComponent(texto);
+
+      // Número de telefone no formato internacional
+      var numeroTelefone = "5511949240664"; 
+
+      // Monta a URL final
+      var urlWhatsApp = `https://api.whatsapp.com/send?phone=${numeroTelefone}&text=${textoCodificado}`;
+
+
+      // Abre o WhatsApp em uma nova aba
+      window.open(urlWhatsApp, '_blank');
+
+      window.location.href = 'https://www.pjkadvocacia.com';
+
     }
   </script>
 
